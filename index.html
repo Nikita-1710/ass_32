@@ -47,25 +47,43 @@
     </div>
 
     <script>
+        function resetDice() {
+            const diceImg = document.getElementById('dice-img');
+            diceImg.src = 'five.png';
+        }
+
         function rollDice() {
             const min = 1;
             const max = 6;
-            const randomNum = Math.round(Math.random() * (max - min)) + min;  
+            const diceRoll = Math.round(Math.random() * (max - min)) + min;  
             const diceImg = document.getElementById('dice-img');
 
-            if (randomNum == 1) {
+            if (diceRoll == 1) 
+            {
                 diceImg.src = 'one.png';
-            } else if (randomNum == 2) {
+            } 
+            else if (diceRoll == 2) 
+            {
                 diceImg.src = 'two.png';
-            } else if (randomNum == 3) {
+            } 
+            else if (diceRoll == 3) 
+            {
                 diceImg.src = 'three.png';
-            } else if (randomNum == 4) {
+            } 
+            else if (diceRoll == 4) 
+            {
                 diceImg.src = 'four.png';
-            } else if (randomNum == 5) {
+            } 
+            else if (diceRoll == 5) 
+            {
                 diceImg.src = 'five.png';
-            } else if (randomNum == 6) {
+            } 
+            else if (diceRoll == 6) 
+            {
                 diceImg.src = 'six.png';
             }
+
+            setTimeout(resetDice, 2500);
         }
     </script>
 </body>
