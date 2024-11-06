@@ -42,14 +42,14 @@
     <h1 class="text-center">Dice Roller</h1>
     <hr />
     <div class="container">
-        <img src="five.png" class="dice-img" id="dice-img" alt="dice">
+        <img src="./img/five.png" class="dice-img" id="dice-img" alt="dice">
         <button type="button" class="roll-btn" onclick="rollDice()">Roll</button>
     </div>
 
     <script>
         function resetDice() {
             const diceImg = document.getElementById('dice-img');
-            diceImg.src = 'five.png';
+            diceImg.src = './img/five.png';
         }
 
         function rollDice() {
@@ -60,27 +60,27 @@
 
             if (diceRoll == 1) 
             {
-                diceImg.src = 'one.png';
+                diceImg.src = './img/one.png';
             } 
             else if (diceRoll == 2) 
             {
-                diceImg.src = 'two.png';
+                diceImg.src = './img/two.png';
             } 
             else if (diceRoll == 3) 
             {
-                diceImg.src = 'three.png';
+                diceImg.src = './img/three.png';
             } 
             else if (diceRoll == 4) 
             {
-                diceImg.src = 'four.png';
+                diceImg.src = './img/four.png';
             } 
             else if (diceRoll == 5) 
             {
-                diceImg.src = 'five.png';
+                diceImg.src = './img/five.png';
             } 
             else if (diceRoll == 6) 
             {
-                diceImg.src = 'six.png';
+                diceImg.src = './img/six.png';
             }
 
             setTimeout(resetDice, 2500);
