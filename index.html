@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: greenyellow;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    h1{
+        margin: 10px 0px;
+        color: blue;
+    }
+
+    .dice-img{
+        height: 400px;
+        display: block;
+        margin: 50px auto;
+    }
+
+    .roll-btn{
+        padding: 10px 50px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        display: block;
+        margin: 10px auto;
+    }
+</style>
+<body>
+    <h1 class="text-center">Dice Roller</h1>
+    <hr />
+    <div class="container">
+        <img src="./img/five.png" class="dice-img" alt="dice">
+        <button type="button" class="roll-btn" onclick="rollDice()">
+            Roll
+        </button>
+    </div>
+    
+</body>
+</html>
